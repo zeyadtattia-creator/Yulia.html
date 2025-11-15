@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Yulia!</title>
+<style>
+    body {
+        margin: 0;
+        padding: 20px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+        color: #fff;
+        background: linear-gradient(-45deg, #0b0033, #2b0b5f, #5b2b8f, #ff0080);
+        background-size: 400% 400%;
+        animation: gradientAnimation 15s ease infinite;
+        overflow: hidden;
+    }
+
+    @keyframes gradientAnimation {
+        0% {background-position: 0% 50%;}
+        50% {background-position: 100% 50%;}
+        100% {background-position: 0% 50%;}
+    }
+
+    h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px #00000033;
+    }
+
+    p {
+        font-size: 1.2em;
+        line-height: 1.5em;
+        max-width: 700px;
+        margin: auto;
+    }
+
+    .hearts {
+        font-size: 1.5em;
+        margin-top: 15px;
+        color: #fff;
+    }
+
+    /* Pink sparkles */
+    .sparkle {
+        position: absolute;
+        background: #ff8de0;
+        border-radius: 50%;
+        opacity: 0.8;
+        animation: twinkle 2s infinite;
+    }
+
+    @keyframes twinkle {
+        0%, 100% {opacity: 0.8;}
+        50% {opacity: 0.2;}
+    }
+</style>
+</head>
+<body>
+
+<div>
+    <h1>🎉 Happy Birthday Yulia! 🎉</h1>
+    <p>
+        arggh i would have done sum better stuff or got u smth better but thats the least i could doo behind a screen, happy bday yuliaa i fr enjoyed texting ya past 6 months, ur fucked up humor, and stupid slow brain makes u amazing too, lowkk ur a bless atleast 4 me perhance. <br><br>
+        Ur rlly cute, confident, adorable, weird and lesbian that sometimes acts like a feisty gorilla. i hope u do actually get whatever u want this year and, i hope we remain talking too cz it will be awesome actually. <br><br>
+        alsoo u made me realize sum rlly good points where i didnt notice through which iam rlly thankful 4. im thankfull 4 u too maybe alitlle alittle thats it. <br><br>
+        anw 2day is ur day make sure u enjoy it at peak cz ppl finna treat u as a slave the day after ur bday lmaoo, and get back 2 washing dishes xoxo
+    </p>
+    <div class="hearts">♡ ♡ ♡</div>
+</div>
+
+<!-- Pink Sparkles -->
+<script>
+    for(let i = 0; i < 200; i++){ // lots of sparkles
+        let sparkle = document.createElement('div');
+        sparkle.className = 'sparkle';
+        sparkle.style.top = Math.random() * window.innerHeight + 'px';
+        sparkle.style.left = Math.random() * window.innerWidth + 'px';
+        let size = 12 + Math.random() * 6; // bigger size 12-18px
+        sparkle.style.width = size + 'px';
+        sparkle.style.height = size + 'px';
+        sparkle.style.animationDuration = (1 + Math.random() * 2) + 's';
+        document.body.appendChild(sparkle);
+    }
+</script>
+
+</body>
+</html>
